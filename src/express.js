@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 sequelize
-    .sync()
+    .sync({ force: true })
     .then(async () => {
         const books = await Book.findAll();
 
