@@ -23,3 +23,5 @@
    - hyperfine 'node src/read-write-node.js' 'bun run src/read-write-node.js'
    - hyperfine 'bun run src/read-write-node.js' 'bun run src/read-write-bun.js'
    - hyperfine 'node src/read-write-node.js' 'bun run src/read-write-bun.js'
+   - hyperfine 'node run src/read-write-node.js' 'deno run -A src/read-write-deno.js'
+   - hyperfine 'bun run src/read-write-bun.js' 'deno run -A src/read-write-deno.js'
